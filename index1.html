@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Filtering</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+        <header>
+            <div class="header-content">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt5pTl6-oEin1GNKvBfrTqsUSSsQBtdSnRMg&s" alt="Company Logo" class="logo">
+                <h1 class="company-name">Dynamic Content Filtering</h1>
+                <nav>
+                    <ul class="navbar">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    <div class="container">
+        <input type="text" id="searchInput" placeholder="Search items..." />
+        <input type="text" id="categoryInput" placeholder="Filter by category..." />
+        <ul id="itemList">
+            <!-- Clothes -->
+            <li class="item" data-category="clothes">
+                <img src="https://assets.ajio.com/medias/sys_master/root/20231128/zkbG/6565c3ddafa4cf41f5a5ea1c/-473Wx593H-466833334-white-MODEL.jpg" alt="Shirt" class="item-img">
+                <div class="item-details">
+                    <h2>Classic White Shirt</h2>
+                    <p class="description">A timeless white shirt perfect for any occasion.</p>
+                    <p class="price">₹1,299</p>
+                </div>
+            </li>
+            <li class="item" data-category="clothes">
+                <img src="https://www.madish.in/cdn/shop/files/FlaredWideLegHighWaistJeans2x3May2024LR-1-2.webp?v=1723326178&width=800" alt="Jeans" class="item-img">
+                <div class="item-details">
+                    <h2>Denim Jeans</h2>
+                    <p class="description">Comfortable denim jeans with a modern fit.</p>
+                    <p class="price">₹1,799</p>
+                </div>
+            </li>
+            <li class="item" data-category="clothes">
+                
+                <div class="item-details">
+                    <h2>Leather Jacket</h2>
+                    <p class="description">Stylish leather jacket for a bold look.</p>
+                    <p class="price">₹3,499</p>
+                </div>
+            </li>
+
+            <!-- Jewelry -->
+            <li class="item" data-category="jewellery">
+               
+                <div class="item-details">
+                    <h2>Gold Necklace</h2>
+                    <p class="description">Elegant gold necklace with intricate design.</p>
+                    <p class="price">₹4,999</p>
+                </div>
+            </li>
+            <li class="item" data-category="jewellery">
+               
+                <div class="item-details">
+                    <h2>Diamond Ring</h2>
+                    <p class="description">Exquisite diamond ring for special occasions.</p>
+                    <p class="price">₹9,999</p>
+                </div>
+            </li>
+            <li class="item" data-category="jewellery">
+              
+                <div class="item-details">
+                    <h2>Silver Bracelet</h2>
+                    <p class="description">Charming silver bracelet with elegant details.</p>
+                    <p class="price">₹2,499</p>
+                </div>
+            </li>
+
+            <!-- Electronic Appliances -->
+            <li class="item" data-category="electronics">
+                
+                <div class="item-details">
+                    <h2>Smartphone</h2>
+                    <p class="description">Latest smartphone with high-end features.</p>
+                    <p class="price">₹24,999</p>
+                </div>
+            </li>
+            <li class="item" data-category="electronics">
+                
+                <div class="item-details">
+                    <h2>Gaming Laptop</h2>
+                    <p class="description">Powerful gaming laptop with high performance.</p>
+                    <p class="price">₹59,999</p>
+                </div>
+            </li>
+            <li class="item" data-category="electronics">
+                
+                <div class="item-details">
+                    <h2>Wireless Headphones</h2>
+                    <p class="description">Comfortable wireless headphones with excellent sound quality.</p>
+                    <p class="price">₹3,499</p>
+                </div>
+            </li>
+
+            <!-- Decor -->
+            <li class="item" data-category="decor">
+                
+                <div class="item-details">
+                    <h2>Elegant Vase</h2>
+                    <p class="description">Beautiful vase to enhance your living space.</p>
+                    <p class="price">₹1,199</p>
+                </div>
+            </li>
+            <li class="item" data-category="decor">
+                
+                <div class="item-details">
+                    <h2>Table Lamp</h2>
+                    <p class="description">Modern table lamp for a stylish touch.</p>
+                    <p class="price">₹799</p>
+                </div>
+            </li>
+            <li class="item" data-category="decor">
+               
+                <div class="item-details">
+                    <h2>Area Rug</h2>
+                    <p class="description">Cozy area rug to add warmth to any room.</p>
+                    <p class="price">₹2,299</p>
+                </div>
+            </li>
+
+            <li class="item" data-category="clothes">
+
+                <div class="item-details">
+                    <h2>Summer Dress</h2>
+                    <p class="description">Light and breezy summer dress.</p>
+                    <p class="price">₹1,499</p>
+                </div>
+            </li>
+            <li class="item" data-category="clothes">
+
+                <div class="item-details">
+                    <h2>Formal Suit</h2>
+                    <p class="description">Tailored formal suit for business meetings.</p>
+                    <p class="price">₹5,499</p>
+                </div>
+            </li>
+            <li class="item" data-category="clothes">
+
+                <div class="item-details">
+                    <h2>Wool Scarf</h2>
+                    <p class="description">Warm wool scarf for the winter season.</p>
+                    <p class="price">₹799</p>
+                </div>
+            </li>
+            <li class="item" data-category="jewellery">
+               
+                <div class="item-details">
+                    <h2>Gold Earrings</h2>
+                    <p class="description">Sophisticated gold earrings with a classic design.</p>
+                    <p class="price">₹3,499</p>
+                </div>
+            </li>
+            <li class="item" data-category="jewellery">
+                
+                <div class="item-details">
+                    <h2>Diamond Pendant</h2>
+                    <p class="description">Stunning diamond pendant for a touch of elegance.</p>
+                    <p class="price">₹6,999</p>
+                </div>
+            </li>
+            <li class="item" data-category="jewellery">
+
+                <div class="item-details">
+                    <h2>Decorative Brooch</h2>
+                    <p class="description">Unique decorative brooch for any outfit.</p>
+                    <p class="price">₹1,299</p>
+                </div>
+            </li>
+            <li class="item" data-category="electronics">
+              
+                <div class="item-details">
+                    <h2>Smart TV</h2>
+                    <p class="description">High-definition smart TV with advanced features.</p>
+                    <p class="price">₹39,999</p>
+                </div>
+            </li>
+            <li class="item" data-category="electronics">
+               
+                <div class="item-details">
+                    <h2>Kitchen Blender</h2>
+                    <p class="description">Powerful kitchen blender for easy food preparation.</p>
+                    <p class="price">₹1,199</p>
+                </div>
+            </li>
+            <li class="item" data-category="electronics">
+               
+                <div class="item-details">
+                    <h2>Microwave Oven</h2>
+                    <p class="description">Convenient microwave oven for quick meals.</p>
+                    <p class="price">₹2,799</p>
+                </div>
+            </li>
+            <li class="item" data-category="decor">
+                <div class="item-details">
+                    <h2>Wall Clock</h2>
+                    <p class="description">Elegant wall clock for any room.</p>
+                    <p class="price">₹999</p>
+                </div>
+            </li>
+            <li class="item" data-category="decor">
+                
+                <div class="item-details">
+                    <h2>Picture Frame</h2>
+                    <p class="description">Stylish picture frame for your favorite photos.</p>
+                    <p class="price">₹699</p>
+                </div>
+            </li>
+            <li class="item" data-category="decor">
+               
+                <div class="item-details">
+                    <h2>Decorative Cushion</h2>
+                    <p class="description">Soft and decorative cushion for your sofa.</p>
+                    <p class="price">₹899</p>
+                </div>
+            </li>
+            <li class="item" data-category="clothes">
+               
+                <div class="item-details">
+                    <h2>Casual Shorts</h2>
+                    <p class="description">Comfortable shorts for casual wear.</p>
+                    <p class="price">₹899</p>
+                </div>
+            </li>
+            <li class="item" data-category="clothes">
+               
+                <div class="item-details">
+                    <h2>Winter Sweater</h2>
+                    <p class="description">Warm sweater for the cold season.</p>
+                    <p class="price">₹1,299</p>
+                </div>
+            </li>
+            <li class="item" data-category="clothes">
+               
+                <div class="item-details">
+                    <h2>Summer Skirt</h2>
+                    <p class="description">Light and airy skirt for summer.</p>
+                    <p class="price">₹1,099</p>
+                </div>
+            </li>
+            <li class="item" data-category="jewellery">
+
+                <div class="item-details">
+                    <h2>Gold Hoop Earrings</h2>
+                    <p class="description">Elegant gold hoop earrings for a chic look.</p>
+                    <p class="price">₹2,499</p>
+                </div>
+            </li>
+            <li class="item" data-category="jewellery">
+               
+                <div class="item-details">
+                    <h2>Silver Ring</h2>
+                    <p class="description">Simple silver ring for everyday wear.</p>
+                    <p class="price">₹1,299</p>
+                </div>
+            </li>
+            <li class="item" data-category="jewellery">
+               
+                <div class="item-details">
+                    <h2>Gold Bracelet</h2>
+                    <p class="description">Stylish gold bracelet for any occasion.</p>
+                    <p class="price">₹3,199</p>
+                </div>
+            </li>
+            <li class="item" data-category="electronics">
+
+                <div class="item-details">
+                    <h2>Digital Camera</h2>
+                    <p class="description">High-quality digital camera for photography enthusiasts.</p>
+                    <p class="price">₹29,999</p>
+                </div>
+            </li>
+            <li class="item" data-category="electronics">
+               
+                <div class="item-details">
+                    <h2>Bluetooth Speaker</h2>
+                    <p class="description">Portable Bluetooth speaker with excellent sound.</p>
+                    <p class="price">₹2,499</p>
+                </div>
+            </li>
+            <li class="item" data-category="electronics">
+               
+                <div class="item-details">
+                    <h2>Air Conditioner</h2>
+                    <p class="description">Energy-efficient air conditioner for a comfortable environment.</p>
+                    <p class="price">₹25,999</p>
+                </div>
+            </li>
+            <li class="item" data-category="decor">
+
+                <div class="item-details">
+                    <h2>Wall Mirror</h2>
+                    <p class="description">Elegant wall mirror for your hallway or living room.</p>
+                    <p class="price">₹1,699</p>
+                </div>
+            </li>
+            <li class="item" data-category="decor">
+               
+                <div class="item-details">
+                    <h2>Candle Holder</h2>
+                    <p class="description">Beautiful candle holder to create a cozy atmosphere.</p>
+                    <p class="price">₹699</p>
+                </div>
+            </li>
+            <li class="item" data-category="decor">
+                
+                <div class="item-details">
+                    <h2>Throw Blanket</h2>
+                    <p class="description">Soft throw blanket for added comfort.</p>
+                    <p class="price">₹1,099</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <p>For inquiries, please reach out to us at:</p>
+        <p>Email: anushkao946@gmail.com</p>
+        <p>Phone: +91 6203076102</p>
+    </section>
+
+    <footer>
+        <p>&copy; Anushka. All rights reserved.</p>
+    </footer>
+
+  
+    <div id="modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImg">
+    </div>
+
+    <script src="script1.js"></script>
+</body>
+</html>

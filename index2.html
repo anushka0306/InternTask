@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive CSS Grid Layout</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <header>
+        <div class="logo">My Logo</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="grid" id="grid">
+              
+                <div class="grid-item" draggable="true" data-id="1">
+                    Item 1
+                    <button class="remove-btn">×</button>
+                </div>
+                <div class="grid-item" draggable="true" data-id="2">
+                    Item 2
+                    <button class="remove-btn">×</button>
+                </div>
+               
+            </div>
+            <div class="controls">
+                <button id="addItemBtn">Add New Item</button>
+                <button id="removeItemBtn">Remove Item</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 My Website. All rights reserved.</p>
+    </footer>
+    <script src="script2.js"></script>
+</body>
+</html>
+\

@@ -1,0 +1,168 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f0f4f8;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Ensures header content wraps on smaller screens */
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 10px; /* Adds space between nav items on smaller screens */
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+    flex: 1; /* Ensures main content area expands to fill available space */
+}
+
+.container {
+    width: 90%; /* Adjusts width for smaller screens */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Fixed to 2 columns */
+    gap: 10px;
+    padding: 10px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.grid-item {
+    position: relative;
+    background: #007bff;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: grab;
+    user-select: none;
+    transition: background 0.3s;
+}
+
+.grid-item:active {
+    cursor: grabbing;
+}
+
+.grid-item .remove-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: red;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.grid-item:hover .remove-btn {
+    opacity: 1;
+}
+
+.controls {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap; /* Allows buttons to wrap on smaller screens */
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    transition: background 0.3s;
+}
+
+#addItemBtn {
+    background: #007bff;
+}
+
+#addItemBtn:hover {
+    background: #0056b3;
+}
+
+#removeItemBtn {
+    background: #dc3545;
+}
+
+#removeItemBtn:hover {
+    background: #c82333;
+}
+
+footer {
+    background: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    margin-top: auto; /* Pushes the footer to the bottom if content is short */
+}
+
+.grid-item.dragging {
+    opacity: 0.5;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr; /* Stacks items into one column on narrow screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-item {
+        padding: 15px; /* Reduces padding on very small screens */
+    }
+
+    nav a {
+        font-size: 14px; /* Smaller font for nav links */
+        margin: 0 5px; /* Less margin between nav links */
+    }
+}

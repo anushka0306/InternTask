@@ -1,0 +1,162 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #baf5f1;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    margin: 2rem auto;
+}
+
+h1 {
+    margin-bottom: 1rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input.error {
+    border-color: red;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.875rem;
+    display: block;
+    margin-top: 0.5rem;
+}
+
+.success-message {
+    color: #28a745;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.success-message::before {
+    content: '✔ ';
+    font-size: 1.2rem;
+}
+
+footer {
+    background-color: #bbb6f0;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header {
+        text-align: center;
+        padding: 0.5rem 0; /* Reduce padding on smaller screens */
+    }
+
+    nav ul {
+        justify-content: center; /* Center nav items on smaller screens */
+    }
+
+    .container {
+        padding: 1.5rem;
+        margin: 1rem auto;
+    }
+
+    h1 {
+        font-size: 1.5rem; /* Reduce font size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul li {
+        margin: 0.5rem; /* Reduce margin for nav items on very small screens */
+    }
+
+    .container {
+        padding: 1rem;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+        padding: 0.4rem; /* Adjust input padding for smaller screens */
+    }
+
+    button {
+        padding: 0.4rem 0.8rem; /* Adjust button padding */
+        font-size: 0.875rem; /* Adjust button font size */
+    }
+
+    h1 {
+        font-size: 1.25rem; /* Further reduce font size for very small screens */
+    }
+
+    footer {
+        font-size: 0.875rem; /* Reduce footer text size on small screens */
+    }
+}
